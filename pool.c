@@ -32,7 +32,6 @@ void add_req(struct tPool *pool, void *(*routine)(void *), void *arg)
     {
         pthread_cond_broadcast(&pool->notEmpty);
     }
-    printf("req");
     struct rout req;
     req.routine=routine;
     req.arg=arg;
