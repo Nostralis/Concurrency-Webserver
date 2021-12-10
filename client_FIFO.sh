@@ -2,4 +2,5 @@
 for i in {1..200}
 do 
 	./wclient localhost 10000  /hello.html
+	#sleep 1
 done
